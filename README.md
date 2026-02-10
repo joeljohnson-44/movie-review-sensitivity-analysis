@@ -33,18 +33,8 @@ Example:
 ## 2.2 Exploratory Data Analysis
 - No class Imbalance Present: Both positive and negative classes have equal count. 
 - Number of words and sentences have no significant varation across classes. 
-- 
-
-
-## 2.3 Data Processing
-
-Before training the model, the following preprocessing steps were performed:
-- Removing null values
-- Lowercasing text
-- Removing punctuation
-- Tokenization
-- Stop word removal
-- Vectorization
+- Median count of sentences per review is about ~10 and count of words per review is ~200.  
+For more details check the [exploratory_data_analysis.ipynb](src\exploratory_data_analysis.ipynb)
 
 ---
 
