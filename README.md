@@ -183,15 +183,15 @@ The model files are too large to store in Git, so I have added them in hugging f
 
 - Go to the Hugging Face repository: https://huggingface.co/Joel-44/imdb50k-sensitivity-models/tree/main/distilbert_model
 - Download the all the files in following folder: distilbert_model/
-- Create a folder structure in your project:
-    movie-review-sensitivity-analysis/
-    └─ src/
-      └─ models/
-- Place the downloaded files in the src/models/distilbert_model folder:
-    movie-review-sensitivity-analysis/
-    └─ src/
-      └─ models/
-          └─ distilbert_model/
+- Create a folder structure in your project:  
+    movie-review-sensitivity-analysis/  
+    └─ src/  
+      └─ models/  
+- Place the downloaded files in the src/models/distilbert_model folder:  
+    movie-review-sensitivity-analysis/  
+    └─ src/  
+      └─ models/  
+          └─ distilbert_model/  
 - Verify the folder structure is correct:
   ls src/models 
 
@@ -251,17 +251,13 @@ API is now running inside Docker.
 Single Prediction:
 
 ```bash
-curl -X POST "http://localhost:8000/predict" \
-  -H "Content-Type: application/json" \
-  -d '{"text":"Great service"}'
+curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d "{\"text\":\"Great service\"}"
 ```
 
 Batch Prediction:
 
 ```bash
-curl -X POST "http://localhost:8000/predict_batch" \
-  -H "Content-Type: application/json" \
-  -d '{"texts":["good","bad","average"]}'
+curl -X POST "http://localhost:8000/predict_batch" -H "Content-Type: application/json" -d "{\"texts\":[\"good\",\"bad\",\"average\"]}"
 ```
 
 ---
