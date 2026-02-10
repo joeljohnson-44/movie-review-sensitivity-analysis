@@ -34,7 +34,7 @@ Example:
 - No class Imbalance Present: Both positive and negative classes have equal count. 
 - Number of words and sentences have no significant varation across classes. 
 - Median count of sentences per review is about ~10 and count of words per review is ~200.  
-For more details check the [exploratory_data_analysis.ipynb](src\exploratory_data_analysis.ipynb)
+For more details check the [exploratory_data_analysis.ipynb](src/exploratory_data_analysis.ipynb)
 
 ---
 
@@ -202,8 +202,8 @@ Step 1 — Install Dependencies
 Please make sure python and pip are already installed in the syste, before this step. 
 ```bash
 python -m venv venv
-pip install -r requirements.txt
 .venv\Scripts\Activate.ps1    
+pip install -r requirements.txt
 ```
 
 Step 2 — Start API
