@@ -1,0 +1,16 @@
+jupyter
+pandas
+matplotlib
+kagglehub
+numpy
+joblib
+nltk
+scikit-learn
+xgboost
+datasets
+transformers
+torch
+fastapi 
+pydantic
+uvicorn
+tqdm
