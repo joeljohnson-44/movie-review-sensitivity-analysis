@@ -170,13 +170,36 @@ Using Swagger, you can:
 
 No external tool like Postman is required.
 
-## 5. Setup
+## 5. Setup 
 
-### 5.1 Running the API Locally (Windows environment)
+### 5.1 Clone this repo  
+```
+git clone https://github.com/joeljohnson-44/movie-review-sensitivity-analysis.git 
+```
+After cloning move to this git repo.  
+
+### 5.2 Download Models from Hugging Face
+The model files are too large to store in Git, so I have added them in hugging face repo. 
+
+- Go to the Hugging Face repository: https://huggingface.co/Joel-44/imdb50k-sensitivity-models/tree/main/distilbert_model
+- Download the all the files in following folder: distilbert_model/
+- Create a folder structure in your project:
+    movie-review-sensitivity-analysis/
+    └─ src/
+      └─ models/
+- Place the downloaded files in the src/models/distilbert_model folder:
+    movie-review-sensitivity-analysis/
+    └─ src/
+      └─ models/
+          └─ distilbert_model/
+- Verify the folder structure is correct:
+  ls src/models 
+
+### 5.3 Running the API Locally (Windows environment)
 
 Step 1 — Install Dependencies
 
-Please make sure python and pip are already installed in the syste, before this step .
+Please make sure python and pip are already installed in the syste, before this step. 
 ```bash
 python -m venv venv
 pip install -r requirements.txt
@@ -195,7 +218,7 @@ Step 3 — Open in Browser
 - Swagger UI: `http://localhost:8000/docs`
 - Health Check: `http://localhost:8000/health`
 
-### 5.2 Docker Deployment Documentation
+### 5.4 Docker Deployment Documentation
 
 #### Step 1: Building Docker Image
 
