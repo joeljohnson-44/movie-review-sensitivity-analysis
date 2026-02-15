@@ -151,16 +151,19 @@ Response:
 
 #### [iv] Model Information
 
-`GET /model_info`
+`GET /model_info`  
+
+Gives model used and related information.
 
 ---
 
 ## 4.3 Swagger Documentation
-
 FastAPI automatically generates interactive documentation.
 
 Open Swagger UI:
-- `http://localhost:8000/docs`
+- `http://localhost:8000/docs`  
+
+**_Please make sure to run the application before this step (Setup instructions are provided below)_**
 
 Using Swagger, you can:
 - View all endpoints
@@ -176,7 +179,7 @@ No external tool like Postman is required.
 ```
 git clone https://github.com/joeljohnson-44/movie-review-sensitivity-analysis.git 
 ```
-After cloning move to this git repo.  
+After cloning move to this git repo folder.  
 
 ### 5.2 Download Models from Hugging Face
 The model files are too large to store in Git, so I have added them in hugging face repo. 
@@ -199,7 +202,7 @@ The model files are too large to store in Git, so I have added them in hugging f
 
 Step 1 — Install Dependencies
 
-Please make sure python and pip are already installed in the syste, before this step. 
+Please make sure python and pip are already installed in the system, before this step. 
 ```bash
 python -m venv venv
 .venv\Scripts\Activate.ps1    
